@@ -56,7 +56,14 @@ export const updateRequest = async (req, res) => {
       if (!request) {
         return res.status(404).json({message: 'Request not found' });
       }
-      res.status(200).json({message: 'Blood request deleted successfully' });
+
+      if(request.donor){
+        await Donor.findByIdAndUpdate(request.donor,{
+          isAvailable:true,
+          lastDonated:null
+        });
+      }
+      res.status(200).json({message: 'Blood request deleted and donor is available now' });
     } catch (error) {
       res.status(500).json({error: "Internal server error"});
     }
