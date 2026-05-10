@@ -3,9 +3,9 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
-const donorRoutes =  require("./routes/donorRoutes");
-const patientRoutes =  require("./routes/patientRoutes");
-const requestRoutes =  require("./routes/requestRoutes");
+import donorRoutes from "./routes/donorRoutes.js";
+import patientRoutes from "./routes/patientRoutes.js";
+import requestRoutes from "./routes/requestRoutes.js";
 
 const app = express();
 dotenv.config();

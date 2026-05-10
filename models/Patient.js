@@ -23,10 +23,6 @@ const patientSchema = new mongoose.Schema({
         type: String,
         required: [true, "Hospital name is required"]
     },
-    reason:{
-        type: String,
-        required: [true, "Hospital name is required"]
-    },
     condition:{
         type: String,
         default: "Stable"
