@@ -50,6 +50,18 @@ export const updateRequest = async (req, res) => {
     }
  };
 
+ export const deleteRequest = async (req, res) => {
+    try {
+      const request = await BloodRequest.findByIdAndDelete(req.params.id);
+      if (!request) {
+        return res.status(404).json({message: 'Request not found' });
+      }
+      res.status(200).json({message: 'Blood request deleted successfully' });
+    } catch (error) {
+      res.status(500).json({error: "Internal server error"});
+    }
+};
+
  export const matchDonor = async (req, res) => {
     try {
       const request = await BloodRequest.findById(req.params.id);
