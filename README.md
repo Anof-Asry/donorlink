@@ -30,29 +30,6 @@ DonorLink is a RESTful API-based web system that digitally manages blood donors,
 | Postman    | API testing |
 | Git & GitHub | Version control |
 
-## Project Structure
-donorlink/
-├── controllers/
-│   ├── donorController.js
-│   ├── patientController.js
-│   └── requestController.js
-├── models/
-│   ├── Donor.js
-│   ├── Patient.js
-│   └── BloodRequest.js
-├── routes/
-│   ├── donorRoutes.js
-│   ├── patientRoutes.js
-│   └── requestRoutes.js
-├── frontend/
-│   └── src/
-│       ├── pages/
-│       ├── components/
-│       └── api/
-├── .env
-├── server.js
-└── README.md
-
 ## API Endpoints
 
 ### Donors
@@ -110,7 +87,7 @@ MONGO_URI=mongodb://localhost:27017/donorlink
 npm run dev
 
 # Go into frontend folder
-cd frontend
+cd frontend  
 
 # Install dependencies
 npm install
@@ -119,12 +96,12 @@ npm install
 npm run dev
 
 
-##How to Run
+## How to Run
 > Start MongoDB locally
 > Run backend → npm run dev (runs on port 5000)
 > Run frontend → cd frontend && npm run dev (runs on port 5173)
 > Open browser → http://localhost:5173
 
-##API Testing
+## API Testing
 > Import donorlink-postman.json into Postman
 > All endpoints are tested and documented
