@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
-        <main style={{ flex: 1, padding: '20px' }}>
+        <main style={{ flex: 1, padding: '24px 20px 40px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/donors" element={<Donors />} />
