@@ -1,0 +1,446 @@
+{
+  "info": {
+    "_postman_id": "944bc3c2-a194-4bdd-858a-df1b3e0b59ed",
+    "name": "DonorLinnk API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54672010",
+    "_collection_link": "https://go.postman.co/collection/54672010-944bc3c2-a194-4bdd-858a-df1b3e0b59ed?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "createDonor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Anof Asry\",\r\n    \"bloodGroup\": \"O+\",\r\n    \"age\": 25,\r\n    \"contact\": \"0776262186\",\r\n    \"city\": \"Colombo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/donors",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "donors"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getAllDonor",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/donors",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "donors"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getDonorById",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/donors/6a002f11fe4a8f9cc39c8e75",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "donors",
+            "6a002f11fe4a8f9cc39c8e75"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateDonor",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"city\": \"Kandy\",\r\n    \"isAvailable\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/donors/6a002f11fe4a8f9cc39c8e75",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "donors",
+            "6a002f11fe4a8f9cc39c8e75"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getDonorsByBloodGroup",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/donors/bloodgroup/O+",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "donors",
+            "bloodgroup",
+            "O+"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteDonor",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"city\": \"Kandy\",\r\n    \"isAvailable\": true\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/donors/6a002f11fe4a8f9cc39c8e75",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "donors",
+            "6a002f11fe4a8f9cc39c8e75"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createPatient",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Mary Fernando\",\r\n    \"bloodGroup\": \"O+\",\r\n    \"age\": 34,\r\n    \"contact\": \"0779876543\",\r\n    \"hospital\": \"Colombo General Hospital\",\r\n    \"condition\": \"Critical\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/patients",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "patients"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getAllPatients",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/patients",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "patients"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updatePatient",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"condition\": \"Stable\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/patients/6a0031a8fd8c9100783dba2e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "patients",
+            "6a0031a8fd8c9100783dba2e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deletePatient",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"condition\": \"Stable\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/patients/6a0031a8fd8c9100783dba2e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "patients",
+            "6a0031a8fd8c9100783dba2e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createBloodRequest",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"patient\": \"6a0031a8fd8c9100783dba2e\",\r\n  \"bloodGroup\": \"O+\",\r\n  \"units\": 2,\r\n  \"urgency\": \"Critical\",\r\n  \"hospital\": \"Colombo General Hospital\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/requests",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getAllRequests",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"patient\": \"6a0031a8fd8c9100783dba2e\",\r\n  \"bloodGroup\": \"O+\",\r\n  \"units\": 2,\r\n  \"urgency\": \"Critical\",\r\n  \"hospital\": \"Colombo General Hospital\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/requests",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "MatchDonorToRequest",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"patient\": \"6a0031a8fd8c9100783dba2e\",\r\n  \"bloodGroup\": \"O+\",\r\n  \"units\": 2,\r\n  \"urgency\": \"Critical\",\r\n  \"hospital\": \"Colombo General Hospital\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/requests/6a00338efd8c9100783dba2f/match",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "requests",
+            "6a00338efd8c9100783dba2f",
+            "match"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateRequest",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"status\": \"Fulfilled\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/requests/6a00338efd8c9100783dba2f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "requests",
+            "6a00338efd8c9100783dba2f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteRequest",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/requests/6a00338efd8c9100783dba2f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "requests",
+            "6a00338efd8c9100783dba2f"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,2 +1,11 @@
-frontend/node_modules/
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Maven build output
+**/target/
+
+# Environment variables
 .env
+.env.*
+!.env.example
